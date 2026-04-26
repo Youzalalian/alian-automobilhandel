@@ -15,9 +15,9 @@
 
 backend:
   name: github
-  repo: DEIN-GITHUB-USERNAME/alian-automobilhandel   # ← anpassen
+  repo: Youzalalian/alian-automobilhandel
   branch: main
-  base_url: https://dein-worker.workers.dev            # ← Cloudflare Worker URL
+  base_url: https://sveltia-cms-auth.alalian-josef.workers.dev
 
 # Für lokales Testen ohne Auth (npx decap-server):
 # local_backend: true
