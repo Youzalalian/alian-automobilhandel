@@ -184,10 +184,9 @@ collections:
                 widget: "string"
                 required: false
                 hint: "z.B. 'SUV', 'M Paket', 'Hybrid' — leer lassen falls kein Badge"
-              - label: "Badge-Stil"
+              - label: "Roten 'Neu'-Badge zeigen"
                 name: "badge_new"
                 widget: "boolean"
-                label: "Roten 'Neu'-Badge zeigen"
                 default: false
                 required: false
               - label: "Bild-URL"
