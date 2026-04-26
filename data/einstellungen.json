@@ -20,5 +20,15 @@
     "hours_weekday_close": "17:30",
     "hours_saturday_open": "11:00",
     "hours_saturday_close": "15:00"
+  },
+  "bilder": {
+    "hero": "/images/hero.jpg",
+    "ueber_uns": "/images/ueber-uns.jpg",
+    "svc_ankauf": "/images/svc-ankauf.jpg",
+    "svc_zulassung": "/images/svc-zulassung.jpg",
+    "svc_versicherung": "/images/svc-versicherung.jpg",
+    "svc_aufbereitung": "/images/svc-aufbereitung.jpg",
+    "svc_export": "/images/svc-export.jpg",
+    "svc_glas": "/images/svc-glas.jpg"
   }
 }

@@ -49,6 +49,17 @@ function applySettings(s) {
   set('cms-ueber-text1', s.ueber_uns?.text_1);
   set('cms-ueber-text2', s.ueber_uns?.text_2);
 
+  // Bilder
+  if (s.bilder) {
+    Object.entries(s.bilder).forEach(([key, val]) => {
+      if (val) {
+        document.querySelectorAll(`[data-cms-img="${key}"]`).forEach(img => {
+          img.src = val;
+        });
+      }
+    });
+  }
+
   // Kontaktdaten — alle Vorkommen im Dokument aktualisieren
   const k = s.kontakt;
   if (!k) return;
