@@ -1,0 +1,200 @@
+# ============================================
+# DECAP CMS — Alian Automobilhandel
+# ============================================
+#
+# SETUP-SCHRITTE:
+# 1. GitHub-Repo anlegen und Website dort pushen
+# 2. Cloudflare Pages mit dem Repo verbinden
+# 3. GitHub OAuth App anlegen (github.com/settings/developers)
+#    → Homepage URL: https://deine-domain.de
+#    → Callback URL: https://deine-domain.de/admin/
+# 4. Cloudflare Worker für OAuth deployen:
+#    → https://github.com/sveltia/sveltia-cms-auth
+# 5. Unten repo: und base_url: ausfüllen
+# ============================================
+
+backend:
+  name: github
+  repo: DEIN-GITHUB-USERNAME/alian-automobilhandel   # ← anpassen
+  branch: main
+  base_url: https://dein-worker.workers.dev            # ← Cloudflare Worker URL
+
+# Für lokales Testen ohne Auth (npx decap-server):
+# local_backend: true
+
+media_folder: "images"
+public_folder: "/images"
+
+locale: de
+
+collections:
+
+  # ==========================================
+  # EINSTELLUNGEN — Texte & Kontakt
+  # ==========================================
+  - name: "einstellungen"
+    label: "Einstellungen"
+    files:
+
+      - name: "allgemein"
+        label: "Texte & Kontakt"
+        file: "data/einstellungen.json"
+        format: json
+        fields:
+
+          - label: "Hero-Bereich"
+            name: "hero"
+            widget: "object"
+            collapsed: false
+            fields:
+              - label: "Label (klein)"
+                name: "label"
+                widget: "string"
+                hint: "z.B. 'Automobilhandel in Passau'"
+              - label: "Hauptüberschrift Zeile 1"
+                name: "title_1"
+                widget: "string"
+                hint: "z.B. 'Ihr Fahrzeug.'"
+              - label: "Hauptüberschrift Zeile 2"
+                name: "title_2"
+                widget: "string"
+                hint: "z.B. 'Unsere Erfahrung.'"
+              - label: "Untertitel"
+                name: "subtitle"
+                widget: "text"
+
+          - label: "Über uns"
+            name: "ueber_uns"
+            widget: "object"
+            collapsed: false
+            fields:
+              - label: "Überschrift Zeile 1"
+                name: "heading_1"
+                widget: "string"
+              - label: "Überschrift Zeile 2"
+                name: "heading_2"
+                widget: "string"
+              - label: "Absatz 1"
+                name: "text_1"
+                widget: "text"
+              - label: "Absatz 2"
+                name: "text_2"
+                widget: "text"
+
+          - label: "Kontakt & Öffnungszeiten"
+            name: "kontakt"
+            widget: "object"
+            collapsed: false
+            fields:
+              - label: "Telefon Festnetz"
+                name: "phone_main"
+                widget: "string"
+                hint: "Format: 0851 / 966 16 10"
+              - label: "Telefon Mobil"
+                name: "phone_mobile"
+                widget: "string"
+                hint: "Format: 0171 / 62 67 876"
+              - label: "E-Mail"
+                name: "email"
+                widget: "string"
+              - label: "Adresse"
+                name: "address"
+                widget: "string"
+              - label: "Öffnungszeiten Mo–Fr (von)"
+                name: "hours_weekday_open"
+                widget: "string"
+                default: "10:00"
+              - label: "Öffnungszeiten Mo–Fr (bis)"
+                name: "hours_weekday_close"
+                widget: "string"
+                default: "17:30"
+              - label: "Öffnungszeiten Sa (von)"
+                name: "hours_saturday_open"
+                widget: "string"
+                default: "11:00"
+              - label: "Öffnungszeiten Sa (bis)"
+                name: "hours_saturday_close"
+                widget: "string"
+                default: "15:00"
+
+  # ==========================================
+  # FAHRZEUGE — Inventar verwalten
+  # ==========================================
+  - name: "fahrzeuge"
+    label: "Fahrzeuge"
+    files:
+
+      - name: "inventar"
+        label: "Fahrzeug-Inventar"
+        file: "data/fahrzeuge.json"
+        format: json
+        fields:
+          - label: "Fahrzeugliste"
+            name: "fahrzeuge"
+            widget: "list"
+            label_singular: "Fahrzeug"
+            collapsed: true
+            summary: "{{fields.title}} — {{fields.price}} €"
+            fields:
+              - label: "Bezeichnung"
+                name: "title"
+                widget: "string"
+                hint: "z.B. 'BMW 318i Limousine'"
+              - label: "Marke"
+                name: "brand"
+                widget: "select"
+                options:
+                  - { label: "BMW", value: "BMW" }
+                  - { label: "Mercedes-Benz", value: "Mercedes" }
+                  - { label: "Volkswagen", value: "VW" }
+                  - { label: "Audi", value: "Audi" }
+                  - { label: "Toyota", value: "Toyota" }
+                  - { label: "Opel", value: "Opel" }
+                  - { label: "Andere", value: "Andere" }
+              - label: "Baujahr"
+                name: "year"
+                widget: "number"
+                value_type: "int"
+                min: 1990
+                max: 2030
+              - label: "Kilometerstand"
+                name: "km"
+                widget: "number"
+                value_type: "int"
+                hint: "Nur Zahl, z.B. 187437"
+              - label: "Leistung (PS)"
+                name: "ps"
+                widget: "number"
+                value_type: "int"
+              - label: "Kraftstoff"
+                name: "fuel"
+                widget: "select"
+                options:
+                  - { label: "Benzin", value: "Benzin" }
+                  - { label: "Diesel", value: "Diesel" }
+                  - { label: "Elektro", value: "Elektro" }
+                  - { label: "Hybrid", value: "Hybrid" }
+                  - { label: "Wasserstoff", value: "Wasserstoff" }
+              - label: "Preis (€)"
+                name: "price"
+                widget: "number"
+                value_type: "int"
+              - label: "Badge-Text"
+                name: "badge"
+                widget: "string"
+                required: false
+                hint: "z.B. 'SUV', 'M Paket', 'Hybrid' — leer lassen falls kein Badge"
+              - label: "Badge-Stil"
+                name: "badge_new"
+                widget: "boolean"
+                label: "Roten 'Neu'-Badge zeigen"
+                default: false
+                required: false
+              - label: "Bild-URL"
+                name: "image"
+                widget: "string"
+                hint: "Direktlink zum Fahrzeugbild (z.B. von mobile.de oder classistatic.de)"
+              - label: "Alt-Text"
+                name: "alt"
+                widget: "string"
+                hint: "Beschreibung für Suchmaschinen, z.B. 'BMW 318i Limousine'"

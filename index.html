@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alian Automobilhandel — Ihr Autohändler in Passau seit 2006</title>
+    <meta name="description" content="Alian Automobilhandel in Passau — An- & Verkauf, Zulassungsservice, Autoaufbereitung. Über 20 Jahre Erfahrung. Jetzt Fahrzeug finden.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============ NAVIGATION ============ -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <svg class="nav-logo-icon" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Modernized car silhouette -->
+                    <path d="M40 38 C40 38 48 38 55 32 C62 26 75 18 95 16 C115 14 140 14 160 16 C180 18 190 24 195 28 C200 32 205 38 205 38" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    <!-- Wheels -->
+                    <circle cx="70" cy="40" r="6" stroke="var(--accent)" stroke-width="2" fill="none"/>
+                    <circle cx="175" cy="40" r="6" stroke="var(--accent)" stroke-width="2" fill="none"/>
+                    <!-- Ground line -->
+                    <line x1="35" y1="46" x2="210" y2="46" stroke="var(--accent)" stroke-width="1.5" opacity="0.3"/>
+                </svg>
+                <span class="nav-logo-text">
+                    <span class="nav-logo-name">a<span class="dot">.</span>l<span class="dot">.</span>i<span class="dot">.</span>a<span class="dot">.</span>n</span>
+                    <span class="nav-logo-sub">Automobilhandel</span>
+                </span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#fahrzeuge">Fahrzeuge</a>
+                <a href="#leistungen">Leistungen</a>
+                <a href="#ueber-uns">Über uns</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
+
+            <a href="tel:+4985196616 10" class="nav-cta">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Anrufen
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <a href="#fahrzeuge" class="mobile-menu-link">Fahrzeuge</a>
+            <a href="#leistungen" class="mobile-menu-link">Leistungen</a>
+            <a href="#ueber-uns" class="mobile-menu-link">Über uns</a>
+            <a href="#kontakt" class="mobile-menu-link">Kontakt</a>
+            <div class="mobile-menu-contact">
+                <a href="tel:+498519661610" class="mobile-menu-phone">0851 / 966 16 10</a>
+                <p class="hours-table"><span>Mo–Fr</span><span>10:00–17:30</span><span>Sa</span><span>11:00–15:00</span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ============ HERO ============ -->
+    <header class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="images/hero.jpg" alt="Alian Automobilhandel Passau" id="heroImg" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="label hero-label hero-enter" id="cms-hero-label">Automobilhandel in Passau</p>
+            <h1 class="hero-title hero-enter" id="cms-hero-title">Ihr Fahrzeug.<br>Unsere Erfahrung.</h1>
+            <p class="hero-sub hero-enter" id="cms-hero-subtitle">Seit über 20 Jahren Ihr verlässlicher Partner für An- & Verkauf, Zulassung und Aufbereitung — alles aus einer Hand.</p>
+            <div class="hero-actions hero-enter">
+                <a href="#fahrzeuge" class="btn btn-primary">Fahrzeuge ansehen</a>
+                <a href="tel:+498519661610" class="btn btn-ghost">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    0851 / 966 16 10
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ============ ACTION BAR ============ -->
+    <section class="action-bar">
+        <div class="container">
+            <div class="action-bar-grid">
+                <a href="tel:+498519661610" class="action-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <div>
+                        <strong>Anrufen</strong>
+                        <span>0851 / 966 16 10</span>
+                    </div>
+                </a>
+                <a href="tel:+4917162678 76" class="action-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                    <div>
+                        <strong>Mobil</strong>
+                        <span>0171 / 62 67 876</span>
+                    </div>
+                </a>
+                <a href="https://maps.google.com/?q=Regensburger+Str.+84+94036+Passau" target="_blank" rel="noopener" class="action-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <div>
+                        <strong>Standort</strong>
+                        <span>Regensburger Str. 84, Passau</span>
+                    </div>
+                </a>
+                <div class="action-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    <div>
+                        <strong>Öffnungszeiten</strong>
+                        <span class="hours-table"><span>Mo–Fr</span><span>10–17:30</span><span>Sa</span><span>11–15</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ FAHRZEUGE ============ -->
+    <section class="section fahrzeuge-section" id="fahrzeuge">
+        <div class="container">
+            <div class="section-header reveal no-retrigger">
+                <p class="label">Aktuelle Fahrzeuge</p>
+                <h2>Unser Bestand</h2>
+                <p class="section-sub" id="cms-fahrzeuge-subtitle">27 geprüfte Fahrzeuge — von Kleinwagen bis SUV. Alle Marken, faire Preise.</p>
+            </div>
+
+            <!-- Filter Tabs (Counts werden per JS befüllt) -->
+            <div class="filter-bar reveal reveal-d1 no-retrigger" id="filterBar">
+                <button class="filter-btn active" data-filter="all">Alle <span class="filter-count" id="count-all">—</span></button>
+                <button class="filter-btn" data-filter="BMW">BMW <span class="filter-count" id="count-BMW">—</span></button>
+                <button class="filter-btn" data-filter="Mercedes">Mercedes <span class="filter-count" id="count-Mercedes">—</span></button>
+                <button class="filter-btn" data-filter="VW">VW <span class="filter-count" id="count-VW">—</span></button>
+                <button class="filter-btn" data-filter="Audi">Audi <span class="filter-count" id="count-Audi">—</span></button>
+                <button class="filter-btn" data-filter="Toyota">Toyota <span class="filter-count" id="count-Toyota">—</span></button>
+                <button class="filter-btn" data-filter="Opel">Opel <span class="filter-count" id="count-Opel">—</span></button>
+                <button class="filter-btn" data-filter="Andere">Andere <span class="filter-count" id="count-Andere">—</span></button>
+            </div>
+        </div>
+
+        <!-- Carousel (Fahrzeuge werden per JS aus data/fahrzeuge.json geladen) -->
+        <div class="car-viewport reveal reveal-d2 no-retrigger">
+            <div class="car-track" id="carTrack"></div>
+        </div>
+
+        <!-- Carousel Nav -->
+        <div class="container">
+            <div class="car-nav-wrap reveal reveal-d3 no-retrigger">
+                <button class="car-prev" aria-label="Zurück">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+                <div class="car-dots" id="carDots"></div>
+                <button class="car-next" aria-label="Weiter">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+            </div>
+
+            <div class="car-cta reveal reveal-d4 no-retrigger">
+                <a href="https://home.mobile.de/ALIANAUTOMOBILHANDEL#ses" target="_blank" rel="noopener" class="btn btn-glass">
+                    <svg width="16" height="16" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#e74706"/><text x="12" y="17" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="14" fill="#fff">m</text></svg>
+                    Alle Fahrzeuge auf mobile.de ansehen
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ LEISTUNGEN ============ -->
+    <section class="section leistungen-section" id="leistungen">
+        <div class="container">
+            <div class="ed-header reveal">
+                <p class="label label-accent">Leistungen</p>
+                <h2>Alles aus einer Hand.</h2>
+                <p class="section-sub">Vom Kauf bis zur Zulassung — kein Papierkram, kein Hin und Her.</p>
+            </div>
+
+            <div class="ed-grid">
+                <!-- 1. An- & Verkauf -->
+                <div class="ed-card reveal" style="--ed-d: 0ms">
+                    <div class="ed-img">
+                        <img src="images/svc-ankauf.jpg" alt="Fahrzeug An- und Verkauf" loading="lazy">
+                    </div>
+                    <div class="ed-img-overlay"></div>
+                    <span class="ed-label">Kerngeschäft</span>
+                    <div class="ed-slide">
+                        <div class="ed-front">
+                            <div class="ed-front-group">
+                                <h3 class="ed-title">An- & Verkauf</h3>
+                                <div class="ed-front-wrap">
+                                    <p class="ed-desc">Faire Preise, ehrliche Beratung — seit über 20 Jahren.</p>
+                                    <span class="ed-cta">Details &rsaquo;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ed-back">
+                            <div class="ed-back-inner">
+                                <h3 class="ed-title ed-back-title">Im Detail</h3>
+                                <ul class="ed-list">
+                                    <li>Gebrauchtwagen aller Marken</li>
+                                    <li>Faire Inzahlungnahme Ihres Altwagens</li>
+                                    <li>Persönliche Beratung vor Ort</li>
+                                    <li>Probefahrt jederzeit möglich</li>
+                                </ul>
+                            </div>
+                            <span class="ed-cta ed-cta-back">Kontakt aufnehmen &rsaquo;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Zulassungsservice -->
+                <div class="ed-card reveal" style="--ed-d: 150ms">
+                    <div class="ed-img">
+                        <img src="images/svc-zulassung.jpg" alt="Zulassungsservice" loading="lazy">
+                    </div>
+                    <div class="ed-img-overlay"></div>
+                    <span class="ed-label">Service</span>
+                    <div class="ed-slide">
+                        <div class="ed-front">
+                            <div class="ed-front-group">
+                                <h3 class="ed-title">Zulassungsservice</h3>
+                                <div class="ed-front-wrap">
+                                    <p class="ed-desc">Wir übernehmen die komplette Zulassung für Sie.</p>
+                                    <span class="ed-cta">Details &rsaquo;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ed-back">
+                            <div class="ed-back-inner">
+                                <h3 class="ed-title ed-back-title">Im Detail</h3>
+                                <ul class="ed-list">
+                                    <li>Neuanmeldung & Ummeldung</li>
+                                    <li>Abmeldung & Kurzzeitkennzeichen</li>
+                                    <li>Ausfuhrkennzeichen für Export</li>
+                                    <li>Vollständige Abwicklung ohne Wartezeit</li>
+                                </ul>
+                            </div>
+                            <span class="ed-cta ed-cta-back">Kontakt aufnehmen &rsaquo;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Versicherungsservice -->
+                <div class="ed-card reveal" style="--ed-d: 150ms">
+                    <div class="ed-img">
+                        <img src="images/svc-versicherung.jpg" alt="KFZ-Versicherungsservice" loading="lazy">
+                    </div>
+                    <div class="ed-img-overlay"></div>
+                    <span class="ed-label">Service</span>
+                    <div class="ed-slide">
+                        <div class="ed-front">
+                            <div class="ed-front-group">
+                                <h3 class="ed-title">Versicherungsservice</h3>
+                                <div class="ed-front-wrap">
+                                    <p class="ed-desc">Der optimale Schutz für Ihr Fahrzeug — wir beraten Sie.</p>
+                                    <span class="ed-cta">Details &rsaquo;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ed-back">
+                            <div class="ed-back-inner">
+                                <h3 class="ed-title ed-back-title">Im Detail</h3>
+                                <ul class="ed-list">
+                                    <li>KFZ-Haftpflicht & Kasko</li>
+                                    <li>Tarifvergleich verschiedener Anbieter</li>
+                                    <li>eVB-Nummer sofort verfügbar</li>
+                                    <li>Persönliche Beratung vor Ort</li>
+                                </ul>
+                            </div>
+                            <span class="ed-cta ed-cta-back">Kontakt aufnehmen &rsaquo;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Autoaufbereitung -->
+                <div class="ed-card reveal" style="--ed-d: 300ms">
+                    <div class="ed-img">
+                        <img src="images/svc-aufbereitung.jpg" alt="Professionelle Autoaufbereitung" loading="lazy">
+                    </div>
+                    <div class="ed-img-overlay"></div>
+                    <span class="ed-label">Pflege</span>
+                    <div class="ed-slide">
+                        <div class="ed-front">
+                            <div class="ed-front-group">
+                                <h3 class="ed-title">Autoaufbereitung</h3>
+                                <div class="ed-front-wrap">
+                                    <p class="ed-desc">Professionelle Reinigung — innen und außen wie neu.</p>
+                                    <span class="ed-cta">Details &rsaquo;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ed-back">
+                            <div class="ed-back-inner">
+                                <h3 class="ed-title ed-back-title">Im Detail</h3>
+                                <ul class="ed-list">
+                                    <li>Außenwäsche & Politur</li>
+                                    <li>Innenreinigung & Geruchsneutralisation</li>
+                                    <li>Lackaufbereitung & Versiegelung</li>
+                                    <li>Aufbereitung vor Verkauf</li>
+                                </ul>
+                            </div>
+                            <span class="ed-cta ed-cta-back">Kontakt aufnehmen &rsaquo;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Export -->
+                <div class="ed-card reveal" style="--ed-d: 300ms">
+                    <div class="ed-img">
+                        <img src="images/svc-export.jpg" alt="Internationaler Fahrzeugexport" loading="lazy">
+                    </div>
+                    <div class="ed-img-overlay"></div>
+                    <span class="ed-label">International</span>
+                    <div class="ed-slide">
+                        <div class="ed-front">
+                            <div class="ed-front-group">
+                                <h3 class="ed-title">Export</h3>
+                                <div class="ed-front-wrap">
+                                    <p class="ed-desc">Internationaler Handel — Deutsch, Englisch, Arabisch.</p>
+                                    <span class="ed-cta">Details &rsaquo;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ed-back">
+                            <div class="ed-back-inner">
+                                <h3 class="ed-title ed-back-title">Im Detail</h3>
+                                <ul class="ed-list">
+                                    <li>Ausfuhrkennzeichen & Zolldokumente</li>
+                                    <li>Transport-Organisation weltweit</li>
+                                    <li>Beratung in drei Sprachen</li>
+                                    <li>Langjährige Exporterfahrung</li>
+                                </ul>
+                            </div>
+                            <span class="ed-cta ed-cta-back">Kontakt aufnehmen &rsaquo;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Glas Service -->
+                <div class="ed-card reveal" style="--ed-d: 450ms">
+                    <div class="ed-img">
+                        <img src="images/svc-glas.jpg" alt="Scheibentausch und Glasreparatur" loading="lazy">
+                    </div>
+                    <div class="ed-img-overlay"></div>
+                    <span class="ed-label">Werkstatt</span>
+                    <div class="ed-slide">
+                        <div class="ed-front">
+                            <div class="ed-front-group">
+                                <h3 class="ed-title">Glas Service</h3>
+                                <div class="ed-front-wrap">
+                                    <p class="ed-desc">Steinschlag-Reparatur und Scheibentausch — schnell und fair.</p>
+                                    <span class="ed-cta">Details &rsaquo;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ed-back">
+                            <div class="ed-back-inner">
+                                <h3 class="ed-title ed-back-title">Im Detail</h3>
+                                <ul class="ed-list">
+                                    <li>Steinschlag-Reparatur</li>
+                                    <li>Kompletter Scheibentausch</li>
+                                    <li>Alle Fahrzeugmarken</li>
+                                    <li>Faire Konditionen</li>
+                                </ul>
+                            </div>
+                            <span class="ed-cta ed-cta-back">Kontakt aufnehmen &rsaquo;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ ÜBER UNS ============ -->
+    <section class="section ueber-section" id="ueber-uns">
+        <div class="container">
+            <div class="ueber-grid">
+                <div class="ueber-content reveal">
+                    <p class="label">Über uns</p>
+                    <h2 id="cms-ueber-heading">Seit über 20 Jahren<br>Ihr Partner in Passau</h2>
+                    <p id="cms-ueber-text1">Was als kleine Leidenschaft begann, ist heute ein etablierter Automobilhandel mit einem klaren Versprechen: ehrliche Beratung, faire Preise und ein Rundum-Service, der Ihnen den Autokauf so einfach wie möglich macht.</p>
+                    <p id="cms-ueber-text2">Bei Alian Automobilhandel bekommen Sie nicht nur ein Fahrzeug — Sie bekommen einen Partner, der sich um alles kümmert. Von der Suche über die Aufbereitung bis zur Zulassung und Versicherung.</p>
+
+                </div>
+                <div class="ueber-image reveal reveal-d2">
+                    <div class="ueber-img-wrap">
+                        <img src="images/ueber-uns.jpg" alt="Alian Automobilhandel — Ihr Ansprechpartner" id="ueberImg">
+                        <div class="ueber-img-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            <span>Ihr Foto hier</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ============ BEWERTUNGEN KARUSSELL ============ -->
+    <section class="section reviews-section">
+        <div class="container">
+            <div class="reviews-header reveal">
+                <p class="label">Kundenstimmen</p>
+                <h2>Das sagen unsere Kunden</h2>
+            </div>
+        </div>
+
+        <!-- Auto-scroll carousel -->
+        <div class="reviews-carousel reveal reveal-d1">
+            <div class="reviews-track" id="reviewsTrack">
+                <!-- Card 1 -->
+                <a href="https://home.mobile.de/ALIANAUTOMOBILHANDEL#ratings" target="_blank" rel="noopener" class="review-card">
+                    <div class="review-source">
+                        <svg class="review-google" width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                        <span>Google Bewertung</span>
+                    </div>
+                    <div class="review-stars-row">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="review-text">Super Erfahrung. Ehrliche Beratung, kein Druck. Auto war genau wie beschrieben. Zulassung wurde auch gleich mit erledigt — top Service.</p>
+                    <div class="review-author">
+                        <div class="review-avatar">M</div>
+                        <div>
+                            <span class="review-name">Markus W.</span>
+                            <span class="review-date">vor 3 Monaten</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="https://home.mobile.de/ALIANAUTOMOBILHANDEL#ratings" target="_blank" rel="noopener" class="review-card">
+                    <div class="review-source">
+                        <svg class="review-google" width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                        <span>Google Bewertung</span>
+                    </div>
+                    <div class="review-stars-row">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="review-text">Mein zweites Auto von Alian. Vertraue dem Händler komplett. Preise sind fair und er nimmt sich immer Zeit für eine ausführliche Beratung.</p>
+                    <div class="review-author">
+                        <div class="review-avatar">S</div>
+                        <div>
+                            <span class="review-name">Sarah K.</span>
+                            <span class="review-date">vor 5 Monaten</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="https://home.mobile.de/ALIANAUTOMOBILHANDEL#ratings" target="_blank" rel="noopener" class="review-card">
+                    <div class="review-source">
+                        <svg class="review-google" width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                        <span>Google Bewertung</span>
+                    </div>
+                    <div class="review-stars-row">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="review-text">Sehr freundlich, spricht auch Arabisch. Hat mir bei allem geholfen — Versicherung, Zulassung, alles an einem Tag erledigt. Empfehle ich weiter.</p>
+                    <div class="review-author">
+                        <div class="review-avatar">A</div>
+                        <div>
+                            <span class="review-name">Ahmed R.</span>
+                            <span class="review-date">vor 2 Monaten</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 4 -->
+                <a href="https://home.mobile.de/ALIANAUTOMOBILHANDEL#ratings" target="_blank" rel="noopener" class="review-card">
+                    <div class="review-source">
+                        <svg class="review-google" width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                        <span>Google Bewertung</span>
+                    </div>
+                    <div class="review-stars-row">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="review-text">Bin über eine Empfehlung zu Alian gekommen. Volkswagen Touran gekauft, super Zustand, fairer Preis. Die komplette Abwicklung lief reibungslos.</p>
+                    <div class="review-author">
+                        <div class="review-avatar">T</div>
+                        <div>
+                            <span class="review-name">Thomas B.</span>
+                            <span class="review-date">vor 4 Monaten</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 5 -->
+                <a href="https://home.mobile.de/ALIANAUTOMOBILHANDEL#ratings" target="_blank" rel="noopener" class="review-card">
+                    <div class="review-source">
+                        <svg class="review-google" width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                        <span>Google Bewertung</span>
+                    </div>
+                    <div class="review-stars-row">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="review-text">Habe meinen alten BMW dort in Zahlung gegeben und einen Audi A5 mitgenommen. Alles an einem Tag erledigt, auch die Versicherung. Klare Empfehlung!</p>
+                    <div class="review-author">
+                        <div class="review-avatar">L</div>
+                        <div>
+                            <span class="review-name">Lisa M.</span>
+                            <span class="review-date">vor 1 Monat</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 6 -->
+                <a href="https://home.mobile.de/ALIANAUTOMOBILHANDEL#ratings" target="_blank" rel="noopener" class="review-card">
+                    <div class="review-source">
+                        <svg class="review-google" width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                        <span>Google Bewertung</span>
+                    </div>
+                    <div class="review-stars-row">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#f4b400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="review-text">Schnell, unkompliziert, ehrlich. Genau so muss ein Autohändler sein. Gerne wieder!</p>
+                    <div class="review-author">
+                        <div class="review-avatar">D</div>
+                        <div>
+                            <span class="review-name">Daniel F.</span>
+                            <span class="review-date">vor 6 Monaten</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="reviews-cta reveal reveal-d2">
+                <a href="https://home.mobile.de/ALIANAUTOMOBILHANDEL#ratings" target="_blank" rel="noopener" class="btn btn-glass">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    Alle 31 Bewertungen lesen
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ KONTAKT / ONBOARDING ============ -->
+    <section class="section kontakt-section" id="kontakt">
+        <div class="container">
+            <div class="contact-header reveal">
+                <p class="label label-accent">Kontakt</p>
+                <h2>In wenigen Schritten zur Anfrage</h2>
+                <p>Sagen Sie uns was Sie brauchen — wir melden uns innerhalb von 24 Stunden.</p>
+            </div>
+
+            <div class="form-wrapper reveal reveal-d1">
+                <!-- Progress -->
+                <div class="form-progress">
+                    <div class="form-step-indicator active" data-step="0">1</div>
+                    <div class="form-step-line"></div>
+                    <div class="form-step-indicator" data-step="1">2</div>
+                    <div class="form-step-line"></div>
+                    <div class="form-step-indicator" data-step="2">3</div>
+                </div>
+
+                <form id="contactForm" novalidate>
+                    <!-- Step 1: Service -->
+                    <div class="form-step active" data-step="0">
+                        <h3>Was können wir für Sie tun?</h3>
+                        <p class="step-subtitle">Wählen Sie eine oder mehrere Leistungen.</p>
+                        <div class="service-select-grid">
+                            <button type="button" class="service-select-btn" data-service="Fahrzeug kaufen">Fahrzeug kaufen</button>
+                            <button type="button" class="service-select-btn" data-service="Fahrzeug verkaufen">Fahrzeug verkaufen</button>
+                            <button type="button" class="service-select-btn" data-service="Zulassungsservice">Zulassungsservice</button>
+                            <button type="button" class="service-select-btn" data-service="Autoaufbereitung">Autoaufbereitung</button>
+                            <button type="button" class="service-select-btn" data-service="Export">Export</button>
+                            <button type="button" class="service-select-btn" data-service="Glas Service">Glas Service</button>
+                        </div>
+                        <div class="form-nav">
+                            <span></span>
+                            <button type="button" class="btn btn-glass form-next" data-next="1">Weiter</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Contact preference -->
+                    <div class="form-step" data-step="1">
+                        <h3>Wie möchten Sie kontaktiert werden?</h3>
+                        <p class="step-subtitle">Wählen Sie Ihren bevorzugten Kanal.</p>
+                        <div class="contact-pref-grid">
+                            <button type="button" class="contact-pref-btn" data-pref="Anruf">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                <span>Anruf</span>
+                            </button>
+                            <button type="button" class="contact-pref-btn" data-pref="WhatsApp">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                                <span>WhatsApp</span>
+                            </button>
+                            <button type="button" class="contact-pref-btn" data-pref="E-Mail">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                <span>E-Mail</span>
+                            </button>
+                        </div>
+                        <div class="form-nav">
+                            <button type="button" class="form-back" data-prev="0">&larr; Zurück</button>
+                            <button type="button" class="btn btn-glass form-next" data-next="2">Weiter</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Details -->
+                    <div class="form-step" data-step="2">
+                        <h3>Wie erreichen wir Sie?</h3>
+                        <p class="step-subtitle">Wir melden uns innerhalb von 24 Stunden.</p>
+                        <div class="ob-form-row ob-two-col">
+                            <div class="ob-form-group">
+                                <label for="obName">Name</label>
+                                <input type="text" class="ob-form-input" id="obName" name="name" placeholder="Ihr Name" required>
+                            </div>
+                            <div class="ob-form-group">
+                                <label for="obPhone">Telefon</label>
+                                <input type="tel" class="ob-form-input" id="obPhone" name="phone" placeholder="+49 ...">
+                            </div>
+                        </div>
+                        <div class="ob-form-row">
+                            <div class="ob-form-group">
+                                <label for="obEmail">E-Mail</label>
+                                <input type="email" class="ob-form-input" id="obEmail" name="email" placeholder="ihre@email.de" required>
+                            </div>
+                        </div>
+                        <div class="ob-form-row">
+                            <div class="ob-form-group">
+                                <label for="obMessage">Nachricht <span style="color:var(--warm-gray-light)">(optional)</span></label>
+                                <textarea class="ob-form-input" id="obMessage" name="message" placeholder="Gibt es etwas, das wir wissen sollten?" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div style="position:absolute;left:-9999px" aria-hidden="true">
+                            <input type="text" name="website_url" tabindex="-1" autocomplete="off">
+                        </div>
+                        <div class="form-nav">
+                            <button type="button" class="form-back" data-prev="1">&larr; Zurück</button>
+                            <button type="submit" class="btn btn-glass form-next">Anfrage absenden</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Success -->
+                <div class="form-success" id="formSuccess">
+                    <div class="form-success-icon">
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <h3>Vielen Dank!</h3>
+                    <p>Ihre Anfrage ist bei uns eingegangen. Wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+                </div>
+            </div>
+
+            <!-- Contact details below -->
+            <div class="contact-info-bar reveal reveal-d2">
+                <a href="tel:+498519661610" class="contact-info-item">
+                    <strong>0851 / 966 16 10</strong>
+                    <span>Festnetz</span>
+                </a>
+                <a href="tel:+4917162678 76" class="contact-info-item">
+                    <strong>0171 / 62 67 876</strong>
+                    <span>Mobil</span>
+                </a>
+                <a href="mailto:Adnan11111@hotmail.de" class="contact-info-item">
+                    <strong>Adnan11111@hotmail.de</strong>
+                    <span>E-Mail</span>
+                </a>
+                <div class="contact-info-item">
+                    <strong class="hours-table"><span>Mo–Fr</span><span>10–17:30</span><span>Sa</span><span>11–15</span></strong>
+                    <span>Öffnungszeiten</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ MAP ============ -->
+    <section class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2639.5!2d13.4314!3d48.5735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sRegensburger+Str.+84%2C+94036+Passau!5e0!3m2!1sde!2sde!4v1" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Standort Alian Automobilhandel"></iframe>
+    </section>
+
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="nav-logo-name">a<span class="dot">.</span>l<span class="dot">.</span>i<span class="dot">.</span>a<span class="dot">.</span>n</span>
+                        <span class="nav-logo-sub">Automobilhandel</span>
+                    </div>
+                    <p>Ihr verlässlicher Partner für Gebrauchtwagen in Passau — seit über 20 Jahren.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="#fahrzeuge">Fahrzeuge</a>
+                    <a href="#leistungen">Leistungen</a>
+                    <a href="#ueber-uns">Über uns</a>
+                    <a href="#kontakt">Kontakt</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Leistungen</h4>
+                    <a href="#leistungen">An- & Verkauf</a>
+                    <a href="#leistungen">Zulassungsservice</a>
+                    <a href="#leistungen">Autoaufbereitung</a>
+                    <a href="#leistungen">Export</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <p>Regensburger Str. 84<br>94036 Passau</p>
+                    <p><a href="tel:+498519661610">0851 / 966 16 10</a></p>
+                    <p><a href="mailto:Adnan11111@hotmail.de">Adnan11111@hotmail.de</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2006 – 2026 Alian Automobilhandel. Alle Rechte vorbehalten.</p>
+                <div class="footer-legal">
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

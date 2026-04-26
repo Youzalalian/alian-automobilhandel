@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "label": "Automobilhandel in Passau",
+    "title_1": "Ihr Fahrzeug.",
+    "title_2": "Unsere Erfahrung.",
+    "subtitle": "Seit über 20 Jahren Ihr verlässlicher Partner für An- & Verkauf, Zulassung und Aufbereitung — alles aus einer Hand."
+  },
+  "ueber_uns": {
+    "heading_1": "Seit über 20 Jahren",
+    "heading_2": "Ihr Partner in Passau",
+    "text_1": "Was als kleine Leidenschaft begann, ist heute ein etablierter Automobilhandel mit einem klaren Versprechen: ehrliche Beratung, faire Preise und ein Rundum-Service, der Ihnen den Autokauf so einfach wie möglich macht.",
+    "text_2": "Bei Alian Automobilhandel bekommen Sie nicht nur ein Fahrzeug — Sie bekommen einen Partner, der sich um alles kümmert. Von der Suche über die Aufbereitung bis zur Zulassung und Versicherung."
+  },
+  "kontakt": {
+    "phone_main": "0851 / 966 16 10",
+    "phone_mobile": "0171 / 62 67 876",
+    "email": "Adnan11111@hotmail.de",
+    "address": "Regensburger Str. 84, 94036 Passau",
+    "hours_weekday_open": "10:00",
+    "hours_weekday_close": "17:30",
+    "hours_saturday_open": "11:00",
+    "hours_saturday_close": "15:00"
+  }
+}
